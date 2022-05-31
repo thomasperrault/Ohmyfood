@@ -1,0 +1,21 @@
+         
+         .bouton {
+            background: linear-gradient($couleur-secondaire 0%, $couleur-primaire 65%);
+           
+            margin: 10px;
+            padding: 15px 15px;
+            text-align: center;
+            transition: 0.5s;
+            color: white;     
+            @include box-shadow;
+            border-radius: 30px;
+            border: none;
+            display: block;
+          }
+
+          .bouton:hover {
+            filter: brightness(110%);
+            text-shadow: 1px 0px 2px $couleur-shadow-fonce;
+            box-shadow: 0px 3px 5px $couleur-shadow-fonce;
+          }
+         

@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 
 .logo{font-family: $font-logo;}
 title{font-family: $font-titre;}
 h1{font-family: $font-titre;}
+h2{font-family: $font-texte; font-size:x-large; font-weight: bolder;}
+p{font-family: $font-texte; font-size:large; font-weight: 300;}
 body{font-family: $font-texte;}
