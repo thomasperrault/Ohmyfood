@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="FR">
 	<link rel="stylesheet" href="Normalize.css"/>
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href=".public/css/style.css" />
 
 	<!-- Onglet du site-->
 	<head>
@@ -15,82 +15,86 @@
 	<!-- Corp du site-->
 	<body>
 		<!-- Header : Logo -->
-		<header class="page_header">
+		<header>
 			<!-- Meta Charset -->
 			<meta charset="UTF-8">
 			<!-- Viewport - Adaptabilite ecran -->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 			<!-- Nav : En-tête du site-->
-			<div id="page_header_entete">
-                <div class="logo">
-                    <img class="page_header_logo" src="images/logo/ohmyfood.png"
-					alt="Logo Ohmyfood" />
-                </div>
-			</div>
+			<div class="header">
+                <nav class="header__arrow" href="index.html">
+                    <i class="fa-solid fa-arrow-left" ></i>
+                </nav>
+                <div class="header__logo">
+                    <a class="logo">ohmyfood</a>
+	            </div>
+            </div>            
         </header>
         <!-- Main : Restaurant-->
 		<main>
-            <section class="index_localisation">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Paris, Belleville</p>
+            <section class="localisation">
+                <div class="localisation__ville">
+                    <i class="fa-solid fa-location-dot localisation__pointeur"></i>
+                    <p>Paris, Belleville</p>
+                </div>
+                <div class="localisation__explorer">
+                    <h2>Réservez le menu qui vous convient</h2>
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <form>
+                        <input class="bouton" 
+                        type="button"
+                        value="Explorer nos restaurants">
+                    </form>
+                </div>
             </section>
-            <section class="index_explication">
-                <p>Réservez le menu qui vous convient</p>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <form>
-                    <input class="index_explorer_nos_restaurants" 
-                    type="button"
-                    value="Explorer nos restaurants">
-                </form>
-            </section>
-            <section class="index_fonctionnement">
-                <p>Fonctionnement</p>
-                <div class="index_etapes_global">
-                    <div class="index_etape">
+            <section class="fonctionnement">
+                <h2>Fonctionnement</h2>
+                <div class="fonctionnement__global">
+                    <div class="fonctionnement__etape">
                         <p>1</p>
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <p>Choisissez un restaurant</p>
                     </div>
-                    <div class="index_etape">
+                    <div class="fonctionnement__etape">
                         <p>2</p>
                         <i class="fa-solid fa-list"></i>
                         <p>Composez votre menu</p>
                     </div>
-                    <div class="index_etape">
+                    <div class="fonctionnement__etape">
                         <p>3</p>
                         <i class="fa-solid fa-store"></i>
                         <p>Dégustez au restaurant</p>
                     </div>
                 </div>
             </section>
-            <section class="index_liste_restaurant">
-                <p>Restaurants</p>
-                <nav class="index_restaurant_global">
-                    <a class="index_restaurant_entite" href="ohmyfood_la_palette_du_gout.html">
-                        <img class="restaurant_image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            <section class="resultat">
+                <h2>Restaurants</h2>
+                <nav class="resultat_global">
+                    <a class="resultat__restaurant" href="ohmyfood_la_palette_du_gout.html">
+                        <img class="resultat__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                                     alt="La palette du goût" />
                         <p><strong>La palette du goût</strong></p>
                         <p>Ménilmontant</p>
                         <i class="fa-regular fa-heart"></i>
-                        <p class="Nouveau">Nouveau</p>
+                        <p class="resultat__nouveau">Nouveau</p>
                     </a>
-                    <a class="index_restaurant_entite" href="ohmyfood_la_note_enchantee.html">
-                        <img class="restaurant_image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                    <a class="resultat__restaurant" href="ohmyfood_la_note_enchantee.html">
+                        <img class="resultat__image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                                     alt="La note enchantée" />
                         <p><strong>La note enchantée</strong></p>
                         <p>Charonne</p>
                         <i class="fa-regular fa-heart"></i>
-                        <p class="Nouveau">Nouveau</p>
+                        <p class="resultat__nouveau">Nouveau</p>
                     </a>
-                    <a class="index_restaurant_entite" href="ohmyfood_a_la_francaise.html">
-                        <img class="restaurant_image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    <a class="resultat__restaurant" href="ohmyfood_a_la_francaise.html">
+                        <img class="resultat__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                                     alt="A la française" />
                         <p><strong>&#192 la française</strong></p>
                         <p>Cité Rouge</p>
                         <i class="fa-regular fa-heart"></i>
                     </a>
-                    <a class="index_restaurant_entite" href="ohmyfood_le_delice_des_sens.html">
-                        <img class="restaurant_image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    <a class="resultat__restaurant" href="ohmyfood_le_delice_des_sens.html">
+                        <img class="resultat__image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                                     alt="Le délice des sens" />
                         <p><strong>Le délice des sens</strong></p>
                         <p>Folie-Méricourt</p>
@@ -100,18 +104,15 @@
             </section>
         </main>
               <!-- Footer : Mentions -->
-		<footer class="footer_liens">
-			<div class="footer_categorie">
-                <img class="page_header_logo" src="images/logo/ohmyfood.png"
-					alt="Logo Ohmyfood" />
+              <footer class="footer">
+                <title>OhMyFood</title>
                 <ul>
-                    <li><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
-					<li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
-					<li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-		</footer>
+                    <li href="#"><i class="fa-solid fa-utensils"></i><a>Proposer un restaurant</a></li>
+                    <li href="#"><i class="fa-solid fa-handshake-angle"></i><a>Devenir partenaire</a></li>
+                    <li href="#"><a>Mentions légales</a></li>                    
+                    <li href="#"><a>Contact</a></li>
+                </ul>
+            </footer>
     </body>
 </html>
                 

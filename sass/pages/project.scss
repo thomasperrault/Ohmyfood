@@ -1,0 +1,17 @@
+.localisation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    &__ville{
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        background-color: $couleur-back-fonce;
+        @include align-center;
+    }
+    &__pointeur{
+        scale: 1.1;
+        padding-right: 20px;
+    }
+}

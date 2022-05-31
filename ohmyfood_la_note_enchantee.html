@@ -15,27 +15,118 @@
 	<!-- Corp du site-->
 	<body>
 		<!-- Header : Logo et Retour au menu-->
-		<header class="page_header">
+		<header>
 			<!-- Meta Charset -->
 			<meta charset="UTF-8">
 			<!-- Viewport - Adaptabilite ecran -->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 			<!-- Nav : En-tête du site-->
-			<div id="page_header_entete">
-				<a class="fleche" href="index.html">
+			<div id="header">
+                <nav class="fleche" href="index.html">
                     <i class="fa-solid fa-arrow-left" ></i>
-                </a>
-                <div class="logo">
+                </nav>
+                <a>Ohmyfood</a>
+                <!--<div class="logo">
                     <img class="page_header_logo" src="images/logo/ohmyfood.png"
 					alt="Logo Ohmyfood" />
-                </div>
+                </div> -->
 			</div>
         </header>
 
-        <!-- Main : Restaurant-->
+        <!-- Main : Menu-->
 		<main>
-            <h1>En construction</h1>
-			<p>La note enchantée</p>
+            <section class="menu">
+                <img class="menu__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                    alt="A la Francaise" />
+                <!--Section : Menu Texte-->
+                <section class="menu__texte">
+                    <div class="menu__nom-restaurant">
+                        <h1>&#192 la française</h1>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="menu__global">
+                        <div class="menu__plat">
+                            <h2>ENTR&#201ES</h2>
+                            <div class="menu__recette menu__recette--choix">
+                                <p><strong>Tartare de poulpe acidulé</strong></p>
+                                <p>Aux zests d'orange</p>
+                                <p>25€</p>
+                                <i class="fa-solid fa-circle-check"></i>                        
+                            </div>
+                            <div class="menu__recette menu__recette--choix">
+                                <p><strong>Velouté de légumes d'antan</strong></p>
+                                <p>Carotte, panais, topinambour</p>
+                                <p>35€</p>
+                                <i class="fa-solid fa-circle-check"></i>                        
+                            </div>
+                            <div class="menu__recette menu__recette--choix">
+                                <p><strong>Soupe à l'oignon</strong></p>
+                                <p>Revisitée</p>
+                                <p>20€</p>
+                                <i class="fa-solid fa-circle-check"></i>                        
+                            </div>
+                        </div>
+                        <div class="menu__plat">
+                            <h2>PLATS</h2>
+                            <div class="menu__recette menu__recette--choix">
+                                <p><strong>Coquilles Saint-Jacques</strong></p>
+                                <p>Accompagnées d'une purée de panais</p>
+                                <p>40€</p>
+                                <i class="fa-solid fa-circle-check"></i>                        
+                            </div>
+                            <div class="menu__recette menu__recette--choix">
+                                <p><strong>Magret de canard</strong></p>
+                                <p>Et parmentier de pommes de terre</p>
+                                <p>35€</p>
+                                <i class="fa-solid fa-circle-check"></i>                        
+                            </div>
+                            <div class="menu__recette menu__recette--choix">
+                                <p><strong>Pigeonneau d’Ille-et-Vilaine</strong></p>
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                                <p>44€</p>
+                                <i class="fa-solid fa-circle-check"></i>                        
+                            </div>
+                        </div>
+                        <div class="menu__plat">
+                            <h2>DESSERTS</h2>
+                            <div class="menu__recette menu__recette--choix">
+                                <p><strong>Pétales de violettes glacés</strong></p>
+                                <p>Et purée de noisettes</p>
+                                <p>18€</p>
+                                <i class="fa-solid fa-circle-check"></i>                        
+                            </div>
+                            <div class="menu__recette menu__recette--choix">
+                                <p><strong>Fondant au chocolat</strong></p>
+                                <p>Revisité</p>
+                                <p>22€</p>
+                                <i class="fa-solid fa-circle-check"></i>                        
+                            </div>
+                            <div class="menu__recette menu__recette--choix">
+                                <p><strong>Millefeuille croustillant</strong></p>
+                                <p>Myrtilles et pâte d’amande</p>
+                                <p>23€</p>
+                                <i class="fa-solid fa-circle-check"></i>                        
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <form>
+                    <input class="bouton" 
+                    type="button"
+                    value="Commander">
+                </form>
+            </section>
         </main>
+
+        <!-- Footer : Mentions -->
+		<footer class="footer">
+            <title>OhMyFood</title>
+            <ul>
+                <li><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+				<li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
+				<li><a href="#">Mentions légales</a></li>                    
+                <li><a href="#">Contact</a></li>
+			</ul>
+		</footer>
     </body>
 </html>
