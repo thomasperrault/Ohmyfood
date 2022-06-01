@@ -20,6 +20,61 @@
         height: auto;
         padding: 0px 50px 15px 50px;
         background-color: $couleur-back-claire;
+        font-weight: 300;
+        font-size:large;
         @include align-center;
     }
 }
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    &__global{
+        padding: 0px;
+        counter-reset: section; 
+    }
+    &__etape{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin: auto 10px 15px 10px;
+        padding-left: 25px;
+        border-radius: 20px;
+        align-items: center;
+        font-size: medium;
+        font-weight: 500;
+        background-color: $couleur-back-claire;
+        @include box-shadow;
+        transition: 0.5s;
+
+        &::before{
+            counter-increment: section; 
+            content: counters(section,".") " "; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            position: absolute;
+            left: 15px;
+            color: white;
+            background: $couleur-primaire;
+        }
+    }
+    &__icone{
+        color: $couleur-icone;
+        padding-right: 15px;
+    }    
+    &__etape:hover {
+        background-color: $bouton-fonctionnement;
+        box-shadow: 0px 3px 5px $bouton-shadow-fonctionnement;
+    }
+    &__etape:hover > .fonctionnement__icone {
+        color: $couleur-primaire;
+    }
+}
+ 
+
+
+  
