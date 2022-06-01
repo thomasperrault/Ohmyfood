@@ -1,0 +1,35 @@
+.footer{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 30px 30px 30px 30px;
+    color: white;
+    background-color: $couleur-back-footer;
+    &__icone{
+        padding-right: 15px;
+    }
+    &__ul{
+        list-style: none;
+        padding: 0px;
+        line-height: 2;
+    }
+    &__li{
+        padding-right: 10px;
+    }
+    &__li > a{
+        color: white;
+    }
+    &__li:hover > a {
+        color: $couleur-primaire;
+    }
+    &__li:hover > i {
+        color: $couleur-primaire;
+    }
+}
+.footer__logo .logo {
+    color: rgb(255, 255, 255);
+    &:hover{
+        color: white;
+    }
+}
+

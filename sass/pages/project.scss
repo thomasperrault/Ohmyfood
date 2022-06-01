@@ -74,7 +74,57 @@
         color: $couleur-primaire;
     }
 }
+.resultat{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: $couleur-back-claire;
+    &__global{
+        padding: 0px;
+        counter-reset: section; 
+    }
+    &__restaurant{
+        display: flex;
+        flex-direction: column;
+        height: 280px;
+        margin: auto 0px 15px 0px;
+        border-radius: 20px;
+        font-size: medium;
+        background-color: white;
+        @include box-shadow;
+        transition: 0.5s;
+    }
+    &__image{
+        display: flex;
+        object-fit: cover;
+        height: 210px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    &__texte{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 20px 0px 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nouveau{
+        position: absolute;
+        right: 30px;
+        font-size: smaller;
+        color: $nouveau;
+        padding: 5px 8px 5px 8px;
+        background-color: $couleur-tertiaire;
+    }
+    &__restaurant:hover {
+        box-shadow: 0px 3px 6px $couleur-primaire;}
+}
  
 
 
-  
+
+
+
+
+
+
+

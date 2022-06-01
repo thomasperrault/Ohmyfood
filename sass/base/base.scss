@@ -1,1 +1,8 @@
 *{box-sizing: border-box;}
+
+a /* Liens par défaut (non survolés) */
+{text-decoration: none; color: black;}
+a:hover /* Apparence au survol des liens */
+{text-decoration: none; color: black}
+a:visited{ /* Apparence liens visités */
+text-decoration: none; color: black;}

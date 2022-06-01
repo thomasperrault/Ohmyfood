@@ -1,8 +1,25 @@
+@charset "UTF-8";
 /*COULEURS*/
 /*POLICES*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  /* Apparence liens visités */
+  text-decoration: none;
+  color: black;
 }
 
 .logo {
@@ -31,6 +48,7 @@ body {
   font-family: "roboto";
 }
 
+/*BOUTON DE CHOIX AVEC DEGRADE*/
 .bouton {
   background: linear-gradient(#FF79DA 0%, #9356DC 65%);
   margin: 10px;
@@ -50,6 +68,51 @@ body {
   box-shadow: 0px 3px 5px #8C8C8C;
 }
 
+/*BOUTON COEUR*/
+#resultat__coeur1 {
+  display: none;
+}
+#resultat__coeur1:hover + label > div {
+  color: #9356DC;
+}
+#resultat__coeur1:checked + label > div {
+  color: #9356DC;
+  font-weight: bold;
+}
+
+#resultat__coeur2 {
+  display: none;
+}
+#resultat__coeur2:hover + label > div {
+  color: #9356DC;
+}
+#resultat__coeur2:checked + label > div {
+  color: #9356DC;
+  font-weight: bold;
+}
+
+#resultat__coeur3 {
+  display: none;
+}
+#resultat__coeur3:hover + label > div {
+  color: #9356DC;
+}
+#resultat__coeur3:checked + label > div {
+  color: #9356DC;
+  font-weight: bold;
+}
+
+#resultat__coeur4 {
+  display: none;
+}
+#resultat__coeur4:hover + label > div {
+  color: #9356DC;
+}
+#resultat__coeur4:checked + label > div {
+  color: #9356DC;
+  font-weight: bold;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -67,6 +130,42 @@ body {
   left: 50%;
   transform: translate(-50%);
   font-size: 25px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 30px 30px 30px 30px;
+  color: white;
+  background-color: #353535;
+}
+.footer__icone {
+  padding-right: 15px;
+}
+.footer__ul {
+  list-style: none;
+  padding: 0px;
+  line-height: 2;
+}
+.footer__li {
+  padding-right: 10px;
+}
+.footer__li > a {
+  color: white;
+}
+.footer__li:hover > a {
+  color: #9356DC;
+}
+.footer__li:hover > i {
+  color: #9356DC;
+}
+
+.footer__logo .logo {
+  color: rgb(255, 255, 255);
+}
+.footer__logo .logo:hover {
+  color: white;
 }
 
 .localisation {
@@ -150,6 +249,52 @@ body {
 }
 .fonctionnement__etape:hover > .fonctionnement__icone {
   color: #9356DC;
+}
+
+.resultat {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #F2F2F2;
+}
+.resultat__global {
+  padding: 0px;
+  counter-reset: section;
+}
+.resultat__restaurant {
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  margin: auto 0px 15px 0px;
+  border-radius: 20px;
+  font-size: medium;
+  background-color: white;
+  box-shadow: 0px 3px 5px #BFBFBF;
+  transition: 0.5s;
+}
+.resultat__image {
+  display: flex;
+  object-fit: cover;
+  height: 210px;
+  border-radius: 20px 20px 0px 0px;
+}
+.resultat__texte {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.resultat__nouveau {
+  position: absolute;
+  right: 30px;
+  font-size: smaller;
+  color: #149374;
+  padding: 5px 8px 5px 8px;
+  background-color: #99E2D0;
+}
+.resultat__restaurant:hover {
+  box-shadow: 0px 3px 6px #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
