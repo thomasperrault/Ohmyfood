@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="FR">
 	<link rel="stylesheet" href="Normalize.css"/>
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="public/css/style.css" />
 
 	<!-- Onglet du site-->
 	<head>
@@ -14,103 +14,201 @@
 
 	<!-- Corp du site-->
 	<body>
-		<!-- Header : Logo et Retour au menu-->
-		<header class="page_header">
+		<!-- Header : Logo -->
+		<header>
 			<!-- Meta Charset -->
 			<meta charset="UTF-8">
 			<!-- Viewport - Adaptabilite ecran -->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 			<!-- Nav : En-tête du site-->
-			<div id="page_header_entete">
-                <a class="fleche" href="index.html">
+			<div class="header">
+                <a class="header__arrow" href="index.html">
                     <i class="fa-solid fa-arrow-left" ></i>
                 </a>
-                <a>Ohmyfood</a>
-                <!--<div class="logo">
-                    <img class="page_header_logo" src="images/logo/ohmyfood.png"
-					alt="Logo Ohmyfood" />
-                </div> -->
-			</div>
+                <div class="header__logo">
+                    <a class="logo">ohmyfood</a>
+	            </div>
+            </div>      
         </header>
 
-        <!-- Main : Restaurant-->
+        <!-- Main : Menu-->
 		<main>
-            <section class="restaurant">
-                <img class="restaurant_image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            <section class="menu">
+                <img class="menu__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                                     alt="A la Francaise" />
-                <!--Section : Restaurant Texte-->
-                <section class="restaurant_texte">
-                    <div class="restaurant_nom">
+                <!--Section : Menu Texte-->
+                <section class="menu__texte">
+                    <div class="menu__nom">
                         <h1>&#192 la française</h1>
-                        <i class="fa-regular fa-heart"></i>
+                        <input type="checkbox" id="resultat__coeur-restau"/>
+                        <label class="btn" for="resultat__coeur-restau"><div class="fa-regular fa-heart"></div></label>
                     </div>
-                    <div class="restaurant_menu">
-                        <div class="restaurant_plat_global">
-                            <h2>ENTR&#201ES</h2>
-                            <div class="restaurant_plat_identifie">
-                                <p><strong>Tartare de poulpe acidulé</strong></p>
-                                <p>Aux zests d'orange</p>
-                                <p>25€</p>
-                                <i class="fa-solid fa-circle-check"></i>                        
+                    <div class="menu__global">
+                        <div class="menu__plat">
+                            <h3 class="menu__ordre">ENTR&#201ES</h3>
+                            <div>
+                                <input type="checkbox"  id="option-1">
+                                <label for="option-1">
+                                  <div class="menu__recette">
+                                      <div>
+                                          <strong>Tartare de poulpe acidulé</strong><br/>
+                                          Aux zestes d'orange
+                                      </div>   
+                                      <div>
+                                          25€
+                                      </div>
+                                      <div class="checkbox">
+                                          <div class="fa-solid fa-circle-check checkbox--rotat"></div>
+                                      </div>
+                                  </div>
+                                </label>
                             </div>
-                            <div class="restaurant_plat_identifie">
-                                <p><strong>Velouté de légumes d'antan</strong></p>
-                                <p>Carotte, panais, topinambour</p>
-                                <p>35€</p>
-                                <i class="fa-solid fa-circle-check"></i>                        
+                            <div>
+                                <input type="checkbox"  id="option-2">
+                                <label for="option-2">
+                                  <div class="menu__recette">
+                                      <div>
+                                          <strong>Velouté de légumes d'antan</strong><br/>
+                                          Carotte, panais, topinambour
+                                      </div>   
+                                      <div>
+                                          32€
+                                      </div>
+                                      <div class="checkbox">
+                                          <div class="fa-solid fa-circle-check checkbox--rotat"></div>
+                                      </div>
+                                  </div>
+                                </label>
                             </div>
-                            <div class="restaurant_plat_identifie">
-                                <p><strong>Soupe à l'oignon</strong></p>
-                                <p>Revisitée</p>
-                                <p>20€</p>
-                                <i class="fa-solid fa-circle-check"></i>                        
+                            <div>
+                                <input type="checkbox"  id="option-3">
+                                <label for="option-3">
+                                  <div class="menu__recette">
+                                      <div>
+                                          <strong>Soupe à l'oignon</strong><br/>
+                                          Revisitée
+                                      </div>   
+                                      <div>
+                                          20€
+                                      </div>
+                                      <div class="checkbox">
+                                          <div class="fa-solid fa-circle-check checkbox--rotat"></div>
+                                      </div>
+                                  </div>
+                                </label>
                             </div>
                         </div>
-                        <div class="restaurant_plat_global">
-                            <h2>PLATS</h2>
-                            <div class="restaurant_plat_identifie">
-                                <p><strong>Coquilles Saint-Jacques</strong></p>
-                                <p>Accompagnées d'une purée de panais</p>
-                                <p>40€</p>
-                                <i class="fa-solid fa-circle-check"></i>                        
+                        <div class="menu__plat">
+                            <h3 class="menu__ordre">PLATS</h3>
+                            <div>
+                                <input type="checkbox"  id="option-4">
+                                <label for="option-4">
+                                  <div class="menu__recette">
+                                      <div>
+                                          <strong>Coquilles Saint-Jacques</strong><br/>
+                                          Accompagnées d'une purée de panais
+                                      </div>   
+                                      <div>
+                                          40€
+                                      </div>
+                                      <div class="checkbox">
+                                          <div class="fa-solid fa-circle-check checkbox--rotat"></div>
+                                      </div>
+                                  </div>
+                                </label>
                             </div>
-                            <div class="restaurant_plat_identifie">
-                                <p><strong>Magret de canard</strong></p>
-                                <p>Et parmentier de pommes de terre</p>
-                                <p>35€</p>
-                                <i class="fa-solid fa-circle-check"></i>                        
+                            <div>
+                                <input type="checkbox"  id="option-5">
+                                <label for="option-5">
+                                  <div class="menu__recette">
+                                      <div>
+                                          <strong>Magret de canard</strong><br/>
+                                          Et parmentier de pommes de terre
+                                      </div>   
+                                      <div>
+                                          35€
+                                      </div>
+                                      <div class="checkbox">
+                                          <div class="fa-solid fa-circle-check checkbox--rotat"></div>
+                                      </div>
+                                  </div>
+                                </label>
                             </div>
-                            <div class="restaurant_plat_identifie">
-                                <p><strong>Pigeonneau d’Ille-et-Vilaine</strong></p>
-                                <p>Sur son lit de gnocchis aux légumes</p>
-                                <p>44€</p>
-                                <i class="fa-solid fa-circle-check"></i>                        
+                            <div>
+                                <input type="checkbox"  id="option-6">
+                                <label for="option-6">
+                                  <div class="menu__recette">
+                                      <div>
+                                          <strong>Pigeonneau d’Ille-et-Vilaine</strong><br/>
+                                          Sur son lit de gnocchis aux légumes
+                                      </div>   
+                                      <div>
+                                          44€
+                                      </div>
+                                      <div class="checkbox">
+                                          <div class="fa-solid fa-circle-check checkbox--rotat"></div>
+                                      </div>
+                                  </div>
+                                </label>
                             </div>
                         </div>
-                        <div class="restaurant_plat_global">
-                            <h2>DESSERTS</h2>
-                            <div class="restaurant_plat_identifie">
-                                <p><strong>Pétales de violettes glacés</strong></p>
-                                <p>Et purée de noisettes</p>
-                                <p>18€</p>
-                                <i class="fa-solid fa-circle-check"></i>                        
+                        <div class="menu__plat">
+                            <h3 class="menu__ordre">DESSERTS</h3>
+                            <div>
+                                <input type="checkbox"  id="option-7">
+                                <label for="option-7">
+                                    <div class="menu__recette">
+                                        <div>
+                                            <strong>Pétales de violettes glacés</strong><br/>
+                                            Et purée de noisettes
+                                        </div>   
+                                        <div>
+                                            18€
+                                        </div>
+                                        <div class="checkbox">
+                                            <div class="fa-solid fa-circle-check checkbox--rotat"></div>
+                                        </div>
+                                    </div>
+                                </label>
                             </div>
-                            <div class="restaurant_plat_identifie">
-                                <p><strong>Fondant au chocolat</strong></p>
-                                <p>Revisité</p>
-                                <p>22€</p>
-                                <i class="fa-solid fa-circle-check"></i>                        
+                            <div>
+                                <input type="checkbox"  id="option-8">
+                                <label for="option-8">
+                                  <div class="menu__recette">
+                                      <div>
+                                          <strong>Fondant au chocolat</strong><br/>
+                                          Revisité
+                                      </div>   
+                                      <div>
+                                          22€
+                                      </div>
+                                      <div class="checkbox">
+                                          <div class="fa-solid fa-circle-check checkbox--rotat"></div>
+                                      </div>
+                                  </div>
+                                </label>
                             </div>
-                            <div class="restaurant_plat_identifie">
-                                <p><strong>Millefeuille croustillant</strong></p>
-                                <p>Myrtilles et pâte d’amande</p>
-                                <p>23€</p>
-                                <i class="fa-solid fa-circle-check"></i>                        
+                            <div>
+                                <input type="checkbox"  id="option-9">
+                                <label for="option-9">
+                                  <div class="menu__recette">
+                                      <div>
+                                          <strong>Millefeuille croustillant</strong><br/>
+                                          Myrtilles et pâte d’amande
+                                      </div>   
+                                      <div>
+                                          23€
+                                      </div>
+                                      <div class="checkbox">
+                                          <div class="fa-solid fa-circle-check checkbox--rotat"></div>
+                                      </div>
+                                  </div>
+                                </label>
                             </div>
                         </div>
                     </div>
                     <form>
-                            <input class="restaurant_bouton_commander" 
+                            <input class="bouton" 
                             type="button"
                             value="Commander">
                     </form>
@@ -118,18 +216,19 @@
             </section>
         </main>
 
-        <!-- Footer : Mentions -->
-		<footer class="footer_liens">
-			<div class="footer_categorie">
-                <img class="page_header_logo" src="images/logo/ohmyfood.png"
-					alt="Logo Ohmyfood" />
-                <ul>
-                    <li><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
-					<li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
-					<li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-		</footer>
+       <!-- Footer : Mentions -->
+       <footer class="footer">
+        <div class="footer__logo">
+            <a class="logo">ohmyfood</a>
+        </div>
+        <ul class="footer__ul">
+            <li class="footer__li" href="#"><i class="fa-solid fa-utensils footer__icone"></i><a>Proposer un restaurant</a></li>
+            <li class="footer__li" href="#"><i class="fa-solid fa-handshake-angle footer__icone"></i><a>Devenir partenaire</a></li>
+            <li class="footer__li" href="#"><a>Mentions légales</a></li>        
+            <li class="footer__li">
+                <a href="mailto:thomas.perrault.pro@gmail.com">Contact</a>
+            </li>
+        </ul>
+    </footer>
     </body>
 </html>

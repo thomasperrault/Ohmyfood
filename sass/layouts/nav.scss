@@ -1,0 +1,100 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    &__image{
+        display: flex;
+        object-fit: cover;
+        height: 250px;
+    }
+    &__texte{
+        background-color: $couleur-back-claire;
+        border-radius: 40px;
+        margin-top: -40px;
+        padding: 15px;
+    }
+    &__nom{
+        display: flex;
+        flex-direction: row;
+        font-size: 25px;
+        padding-right: 25px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__ordre:after {
+        content: "";
+        display: block;
+        background: $couleur-tertiaire;
+        width: 45px;
+        height: 3px;
+        margin-top: 5px;
+      }
+    &__recette{
+        display: flex;
+        height: 60px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 15px;
+        @include box-shadow;
+        transition: 0.5s;
+        cursor: pointer;
+        & div:first-child{
+            width: 85%;
+            text-align: left;
+        }
+        & div:nth-child(2){
+            display: flex;
+            width: 15%;
+            justify-content: left;
+            align-items: end;
+        }
+        & div:nth-child(3){ 
+            display: flex;
+            color: white;
+            width: 0;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+        }
+        &:hover .checkbox{ 
+            display: flex;
+            opacity: 1;
+            width: 15%;
+            margin: -10px;
+            border-radius: 0px 20px 20px 0px;
+            background-color: #99E2D0;         
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s ;
+        }
+        &:hover .checkbox--rotat { 
+            transform: rotate(0deg);
+            align-content: center;
+            text-align: center;
+              transform: rotate(1turn);
+            transition: transform 1s ease-in-out;
+        }
+    }
+}
+input:checked + label .checkbox {
+    display: flex;
+    opacity: 1;
+    width: 15%;
+    margin: -10px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #99E2D0;
+    color: #149374ff;
+    justify-content: center;
+    align-items: center;
+}
+
+input:checked + label .checkbox--rotat { 
+    align-content: center;
+    text-align: center;
+}
+#option-1, #option-2, #option-3, #option-4, #option-5, #option-6, #option-7, #option-8, #option-9{ 
+    display: none;
+}

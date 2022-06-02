@@ -38,5 +38,10 @@
   &:hover+ label > div {color:#9356DC;}
   &:checked + label > div {color:#9356DC; font-weight: bold;}
 }
+#resultat__coeur-restau {
+  display: none;
+  &:hover+ label > div {color:#9356DC;}
+  &:checked + label > div {color:#9356DC; font-weight: bold;}
+}
 
 

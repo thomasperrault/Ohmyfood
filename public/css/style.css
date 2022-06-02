@@ -32,12 +32,19 @@ title {
 
 h1 {
   font-family: "shrikhand";
+  font-size: 25px;
 }
 
 h2 {
   font-family: "roboto";
-  font-size: x-large;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 300;
 }
 
 p {
@@ -113,6 +120,17 @@ body {
   font-weight: bold;
 }
 
+#resultat__coeur-restau {
+  display: none;
+}
+#resultat__coeur-restau:hover + label > div {
+  color: #9356DC;
+}
+#resultat__coeur-restau:checked + label > div {
+  color: #9356DC;
+  font-weight: bold;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -120,7 +138,6 @@ body {
   padding: 15px;
   height: 50px;
   position: absolute;
-  box-shadow: 0px 3px 5px #BFBFBF;
 }
 .header__arrow {
   display: inline-block;
@@ -162,10 +179,117 @@ body {
 }
 
 .footer__logo .logo {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .footer__logo .logo:hover {
   color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+}
+.menu__image {
+  display: flex;
+  object-fit: cover;
+  height: 250px;
+}
+.menu__texte {
+  background-color: #F2F2F2;
+  border-radius: 40px;
+  margin-top: -40px;
+  padding: 15px;
+}
+.menu__nom {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  padding-right: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__ordre:after {
+  content: "";
+  display: block;
+  background: #99E2D0;
+  width: 45px;
+  height: 3px;
+  margin-top: 5px;
+}
+.menu__recette {
+  display: flex;
+  height: 60px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 3px 5px #BFBFBF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.menu__recette div:first-child {
+  width: 85%;
+  text-align: left;
+}
+.menu__recette div:nth-child(2) {
+  display: flex;
+  width: 15%;
+  justify-content: left;
+  align-items: end;
+}
+.menu__recette div:nth-child(3) {
+  display: flex;
+  color: white;
+  width: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.menu__recette:hover .checkbox {
+  display: flex;
+  opacity: 1;
+  width: 15%;
+  margin: -10px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #99E2D0;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.menu__recette:hover .checkbox--rotat {
+  transform: rotate(0deg);
+  align-content: center;
+  text-align: center;
+  transform: rotate(1turn);
+  transition: transform 1s ease-in-out;
+}
+
+input:checked + label .checkbox {
+  display: flex;
+  opacity: 1;
+  width: 15%;
+  margin: -10px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #99E2D0;
+  color: #149374;
+  justify-content: center;
+  align-items: center;
+}
+
+input:checked + label .checkbox--rotat {
+  align-content: center;
+  text-align: center;
+}
+
+#option-1, #option-2, #option-3, #option-4, #option-5, #option-6, #option-7, #option-8, #option-9 {
+  display: none;
+}
+
+.header__accueil {
+  box-shadow: 0px 3px 5px #BFBFBF;
 }
 
 .localisation {

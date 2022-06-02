@@ -1,3 +1,7 @@
+.header__accueil{ 
+    @include box-shadow;
+}
+
 .localisation{
     display: flex;
     flex-direction: column;
