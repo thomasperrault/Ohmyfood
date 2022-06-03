@@ -18,27 +18,7 @@
 }
 
 /*BOUTON COEUR*/
-#resultat__coeur1 {
-  display: none;
-  &:hover+ label > div {color:#9356DC;}
-  &:checked + label > div {color:#9356DC; font-weight: bold;}
-}
-#resultat__coeur2 {
-  display: none;
-  &:hover+ label > div {color:#9356DC;}
-  &:checked + label > div {color:#9356DC; font-weight: bold;}
-}
-#resultat__coeur3 {
-  display: none;
-  &:hover+ label > div {color:#9356DC;}
-  &:checked + label > div {color:#9356DC; font-weight: bold;}
-}
-#resultat__coeur4 {
-  display: none;
-  &:hover+ label > div {color:#9356DC;}
-  &:checked + label > div {color:#9356DC; font-weight: bold;}
-}
-#resultat__coeur-restau {
+#resultat__coeur1, #resultat__coeur2, #resultat__coeur3, #resultat__coeur4, #resultat__coeur-restau {
   display: none;
   &:hover+ label > div {color:#9356DC;}
   &:checked + label > div {color:#9356DC; font-weight: bold;}

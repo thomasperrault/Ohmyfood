@@ -76,57 +76,13 @@ body {
 }
 
 /*BOUTON COEUR*/
-#resultat__coeur1 {
+#resultat__coeur1, #resultat__coeur2, #resultat__coeur3, #resultat__coeur4, #resultat__coeur-restau {
   display: none;
 }
-#resultat__coeur1:hover + label > div {
+#resultat__coeur1:hover + label > div, #resultat__coeur2:hover + label > div, #resultat__coeur3:hover + label > div, #resultat__coeur4:hover + label > div, #resultat__coeur-restau:hover + label > div {
   color: #9356DC;
 }
-#resultat__coeur1:checked + label > div {
-  color: #9356DC;
-  font-weight: bold;
-}
-
-#resultat__coeur2 {
-  display: none;
-}
-#resultat__coeur2:hover + label > div {
-  color: #9356DC;
-}
-#resultat__coeur2:checked + label > div {
-  color: #9356DC;
-  font-weight: bold;
-}
-
-#resultat__coeur3 {
-  display: none;
-}
-#resultat__coeur3:hover + label > div {
-  color: #9356DC;
-}
-#resultat__coeur3:checked + label > div {
-  color: #9356DC;
-  font-weight: bold;
-}
-
-#resultat__coeur4 {
-  display: none;
-}
-#resultat__coeur4:hover + label > div {
-  color: #9356DC;
-}
-#resultat__coeur4:checked + label > div {
-  color: #9356DC;
-  font-weight: bold;
-}
-
-#resultat__coeur-restau {
-  display: none;
-}
-#resultat__coeur-restau:hover + label > div {
-  color: #9356DC;
-}
-#resultat__coeur-restau:checked + label > div {
+#resultat__coeur1:checked + label > div, #resultat__coeur2:checked + label > div, #resultat__coeur3:checked + label > div, #resultat__coeur4:checked + label > div, #resultat__coeur-restau:checked + label > div {
   color: #9356DC;
   font-weight: bold;
 }
@@ -198,7 +154,7 @@ body {
 }
 .menu__texte {
   background-color: #F2F2F2;
-  border-radius: 40px;
+  border-radius: 40px 40px 0px 0px;
   margin-top: -40px;
   padding: 15px;
 }
@@ -220,24 +176,33 @@ body {
 }
 .menu__recette {
   display: flex;
-  height: 60px;
-  background-color: white;
+  height: 66px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 15px;
+  font-size: large;
+  font-weight: 200;
+  background-color: white;
   box-shadow: 0px 3px 5px #BFBFBF;
   transition: 0.5s;
   cursor: pointer;
 }
 .menu__recette div:first-child {
+  display: block;
+  flex-direction: column;
   width: 85%;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: space-between;
   text-align: left;
 }
 .menu__recette div:nth-child(2) {
   display: flex;
-  width: 15%;
   justify-content: left;
   align-items: end;
+  margin-right: 5px;
+  width: 15%;
+  min-width: 50px;
 }
 .menu__recette div:nth-child(3) {
   display: flex;
@@ -246,13 +211,14 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding-right: 5px;
   opacity: 0;
 }
 .menu__recette:hover .checkbox {
   display: flex;
   opacity: 1;
   width: 15%;
-  margin: -10px;
+  margin: -12px;
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
   justify-content: center;
@@ -266,12 +232,29 @@ body {
   transform: rotate(1turn);
   transition: transform 1s ease-in-out;
 }
+.menu__recette--ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__commander {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px;
+}
+.menu__commander--btn {
+  width: 200px;
+}
 
 input:checked + label .checkbox {
   display: flex;
   opacity: 1;
   width: 15%;
-  margin: -10px;
+  min-width: 50px;
+  margin: -12px;
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
   color: #149374;
