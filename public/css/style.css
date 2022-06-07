@@ -158,6 +158,19 @@ body {
   margin-top: -40px;
   padding: 15px;
 }
+.menu__choix {
+  animation: apparition 1s;
+  animation-fill-mode: both;
+}
+.menu__choix:nth-child(1) {
+  animation-delay: 100ms;
+}
+.menu__choix:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menu__choix:nth-child(3) {
+  animation-delay: 300ms;
+}
 .menu__nom {
   display: flex;
   flex-direction: row;
@@ -165,6 +178,11 @@ body {
   padding-right: 25px;
   justify-content: space-between;
   align-items: center;
+}
+.menu__ordre {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 .menu__ordre:after {
   content: "";
@@ -271,6 +289,53 @@ input:checked + label .checkbox--rotat {
   display: none;
 }
 
+/*Animation menu*/
+@keyframes apparition {
+  from {
+    transform: translateY(75%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+/* Animation Loader*/
+.loader {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: #F2F2F2;
+  height: 100vh;
+  inset: 0;
+  /*Dimension par rappot à chaque bord*/
+  animation: disparition 10ms;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.loader i {
+  scale: 3;
+  animation: spin 2s infinite;
+  color: #9356DC;
+}
+
+@keyframes disparition {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .header__accueil {
   box-shadow: 0px 3px 5px #BFBFBF;
 }

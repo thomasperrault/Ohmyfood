@@ -14,6 +14,15 @@
         margin-top: -40px;
         padding: 15px;
     }
+    &__choix{
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                        animation-delay: 100ms * $i;
+                }
+            }
+            animation: apparition 1s;
+            animation-fill-mode: both;
+    }
     &__nom{
         display: flex;
         flex-direction: row;
@@ -22,15 +31,21 @@
         justify-content: space-between;
         align-items: center;
     }
-    &__ordre:after {
+    &__ordre{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        &:after {
         content: "";
         display: block;
         background: $couleur-tertiaire;
         width: 45px;
         height: 3px;
         margin-top: 5px;
-      }
-    &__recette{
+        }
+    }
+
+    &__recette{         
         display: flex;
         height: 66px;
         border-radius: 20px;
@@ -114,7 +129,6 @@ input:checked + label .checkbox {
     justify-content: center;
     align-items: center;
 }
-
 input:checked + label .checkbox--rotat { 
     align-content: center;
     text-align: center;
@@ -122,8 +136,6 @@ input:checked + label .checkbox--rotat {
 #option-1, #option-2, #option-3, #option-4, #option-5, #option-6, #option-7, #option-8, #option-9{ 
     display: none;
 }
-
-
 
 
 
