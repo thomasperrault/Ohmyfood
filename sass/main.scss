@@ -1,12 +1,11 @@
 @import "./utils/variables";
-@import "./utils/fonctions";
 @import "./utils/mixins";
-@import "./utils/placeholders";
 @import "./base/base";
 @import "./base/typography";
+@import "./composants/animations";
 @import "./composants/buttons";
 @import "./layouts/header";
 @import "./layouts/footer";
-@import "./layouts/nav";
+@import "./pages/nav";
 @import "./pages/work";
 @import "./pages/project";
