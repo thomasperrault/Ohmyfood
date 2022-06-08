@@ -1,5 +1,5 @@
 /*Animation menu*/
-@keyframes apparition{
+@keyframes apparition{ /*Animation des menus*/
     from{
         transform: translateY(75%);
         opacity: 0;
@@ -9,8 +9,7 @@
         opacity: 1;
     }
 }
-/* Animation Loader*/
-.loader{
+.loader{ /* Animation Loader*/
     display: grid;
     place-items: center;
     position: fixed;
@@ -27,16 +26,14 @@
         color: $couleur-primaire;
     }
 }
-@keyframes disparition{
+@keyframes disparition{ /*Disparition du loader*/
     from{transform: scale(1);}
     to{transform: scale(0);}
 }
-@keyframes spin{
+@keyframes spin{ /*Rotation du loader*/
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
-
-
 
 
 

@@ -111,6 +111,10 @@
         justify-content: space-between;
         align-items: center;
     }
+    & .coeur{
+        position: absolute;
+        right: 40px;
+    }
     &__nouveau{
         position: absolute;
         right: 30px;

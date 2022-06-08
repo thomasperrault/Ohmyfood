@@ -20,8 +20,28 @@
 /*BOUTON COEUR*/
 #resultat__coeur1, #resultat__coeur2, #resultat__coeur3, #resultat__coeur4, #resultat__coeur-restau {
   display: none;
-  &:hover+ label > div {color:#9356DC;}
-  &:checked + label > div {color:#9356DC; font-weight: bold;}
+  &:hover+ label > div {
+    color: transparent;
+    background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: heart-apparition 500ms;
+    font-weight: bold;
+  }
+  &:checked + label > div {color: transparent;
+    background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    font-weight: bold;
+  }
+  &:checked:hover + label > div {color: transparent;
+    animation: none;
+  }
+}
+@keyframes heart-apparition{ /*Apparition du gradient Hover*/
+  0%{color: black; font-weight: 100;}
+  50%{scale: 0;}
+  to{scale: 1;}
 }
 
 
