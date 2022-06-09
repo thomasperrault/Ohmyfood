@@ -49,8 +49,7 @@ input:checked + label .checkbox {
   display: flex;
   opacity: 1;
   width: 15%;
-  min-width: 50px;
-  margin: -12px;
+  margin: -12px -12px -12px 3px;
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
   color: #149374ff;

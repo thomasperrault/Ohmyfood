@@ -31,14 +31,20 @@
     flex-direction: column;
     padding: 15px;
     &__global{
-        padding: 0px;
+        padding: 0px 10px 0px 0px;
         counter-reset: section; 
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
     &__etape{
         display: flex;
         flex-direction: row;
-        width: auto;
-        margin: auto 10px 15px 10px;
+        width: 100%;
+        height: 50px;
+        margin: 0px 10px 15px 10px;
         padding-left: 25px;
         border-radius: 20px;
         align-items: center;
@@ -61,6 +67,10 @@
             left: 15px;
             color: white;
             background: $couleur-primaire;
+            @include desktop{
+                position:relative;
+                left: -35px;    
+            }
         }
     }
     &__icone{
@@ -83,6 +93,18 @@
     &__global{
         padding: 0px;
         counter-reset: section; 
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
     &__restaurant{
         display: flex;
@@ -94,6 +116,12 @@
         background-color: white;
         @include box-shadow;
         transition: 0.5s;
+        @include tablet{
+            width: 49%;
+        }
+        @include desktop{
+            width: 49%;
+        }
     }
     &__image{
         display: flex;
@@ -111,14 +139,36 @@
     & .coeur{
         position: absolute;
         right: 40px;
+        @include tablet{
+            position:relative;
+            left: 5px; 
+        }
+        @include desktop{
+            position:relative;
+            left: 5px; 
+        }
     }
     &__nouveau{
         position: absolute;
         right: 30px;
         font-size: smaller;
         color: $nouveau;
+        width: 80px;
+        @include align-center;
         padding: 5px 8px 5px 8px;
         background-color: $couleur-tertiaire;
+        @include tablet{
+            position: relative;
+            right: auto;
+            left: 15px;
+            top: -275px;
+        }
+        @include desktop{
+            position: relative;
+            right: auto;
+            left: 15px;
+            top: -275px;
+        }
     }
     &__restaurant:hover {
         box-shadow: 0px 3px 6px $couleur-primaire;}
