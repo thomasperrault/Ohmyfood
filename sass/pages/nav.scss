@@ -9,6 +9,43 @@
         object-fit: cover;
         height: 250px;
     }
+    &__global{
+        @include tablet{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__plat{
+        display: flex;
+        flex-direction: column;
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 45%;
+            padding: 5px;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+        @include desktop{
+            width: 32%;
+        }
+    }
+    &__liste{
+        @include tablet{
+            width: 100%;
+        }
+        @include desktop{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
     &__texte{
         background-color: $couleur-back-claire;
         border-radius: 40px 40px 0px 0px;
@@ -72,11 +109,10 @@
         }
         & div:nth-child(2){
             display: flex;
-            justify-content: left;
+            justify-content: right;
             align-items: end;
             margin-right: 5px;
             width: 15%;
-            min-width: 50px;
         }
         & div:nth-child(3){ 
             display: flex;
@@ -92,7 +128,7 @@
             display: flex;
             opacity: 1;
             width: 15%;
-            margin: -12px;
+            margin: -12px -12px -12px 5px;
             border-radius: 0px 20px 20px 0px;
             background-color: #99E2D0;         
             justify-content: center;

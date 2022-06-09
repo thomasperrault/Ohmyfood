@@ -254,6 +254,51 @@ input:checked + label .checkbox--rotat {
   object-fit: cover;
   height: 250px;
 }
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .menu__global {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1600px) {
+  .menu__global {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.menu__plat {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .menu__plat {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45%;
+    padding: 5px;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1600px) {
+  .menu__plat {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .menu__liste {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1600px) {
+  .menu__liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .menu__texte {
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
@@ -322,11 +367,10 @@ input:checked + label .checkbox--rotat {
 }
 .menu__recette div:nth-child(2) {
   display: flex;
-  justify-content: left;
+  justify-content: right;
   align-items: end;
   margin-right: 5px;
   width: 15%;
-  min-width: 50px;
 }
 .menu__recette div:nth-child(3) {
   display: flex;
@@ -342,7 +386,7 @@ input:checked + label .checkbox--rotat {
   display: flex;
   opacity: 1;
   width: 15%;
-  margin: -12px;
+  margin: -12px -12px -12px 5px;
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
   justify-content: center;
