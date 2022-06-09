@@ -7,5 +7,18 @@
   align-items: center;
   text-align: center;
 }
-
-
+@mixin mobile{
+    @media screen and (min-width: map-get($breakpoints, mobilemin)) and (max-width: map-get($breakpoints, mobilemax)){
+        @content;
+    }
+}
+@mixin tablet{
+    @media screen and (min-width: map-get($breakpoints, tabletmin)) and (max-width: map-get($breakpoints, tabletmax)){
+        @content;
+    }
+}
+@mixin desktop{
+    @media screen and (min-width: map-get($breakpoints, desktopmin)) and (max-width: map-get($breakpoints, desktopmax)){
+        @content;
+    }      
+}
