@@ -22,16 +22,13 @@
   display: none;
   &:hover+ label > div {
     color: transparent;
-    background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
+    background-image: linear-gradient(to right top, $couleur-secondaire, $couleur-primaire);
     background-clip: text;
-    -webkit-background-clip: text;
-    animation: heart-apparition 500ms;
-    font-weight: bold;
+    animation: heart-apparition 2s;
   }
   &:checked + label > div {color: transparent;
     background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
     background-clip: text;
-    -webkit-background-clip: text; 
     font-weight: bold;
   }
   &:checked:hover + label > div {color: transparent;
@@ -40,8 +37,8 @@
 }
 @keyframes heart-apparition{ /*Apparition du gradient Hover*/
   0%{color: black; font-weight: 100;}
-  50%{scale: 0;}
-  to{scale: 1;}
+  to{scale: 1; ;
+  }
 }
 
 /*BOUTON CHECKBOX CHOIX DES PLATS*/
