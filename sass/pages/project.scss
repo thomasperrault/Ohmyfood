@@ -29,9 +29,9 @@
 .fonctionnement{
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 15px 25px 15px 25px;
     &__global{
-        padding: 0px 10px 0px 0px;
+        padding: 0px 15px 0px 0px;
         counter-reset: section; 
         @include desktop{
             display: flex;
@@ -64,7 +64,7 @@
             height: 20px;
             border-radius: 10px;
             position: absolute;
-            left: 15px;
+            left: 20px;
             color: white;
             background: $couleur-primaire;
             @include desktop{
@@ -88,7 +88,7 @@
 .resultat{
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 15px 25px 15px 25px;
     background-color: $couleur-back-claire;
     &__global{
         padding: 0px;

@@ -203,7 +203,7 @@ input:checked + label .checkbox--rotat {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 30px 30px 30px 30px;
+  padding: 30px 25px 30px 25px;
   color: white;
   background-color: #353535;
 }
@@ -462,10 +462,10 @@ input:checked + label .checkbox--rotat {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 15px 25px 15px 25px;
 }
 .fonctionnement__global {
-  padding: 0px 10px 0px 0px;
+  padding: 0px 15px 0px 0px;
   counter-reset: section;
 }
 @media screen and (min-width: 770px) {
@@ -500,7 +500,7 @@ input:checked + label .checkbox--rotat {
   height: 20px;
   border-radius: 10px;
   position: absolute;
-  left: 15px;
+  left: 20px;
   color: white;
   background: #9356DC;
 }
@@ -525,7 +525,7 @@ input:checked + label .checkbox--rotat {
 .resultat {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 15px 25px 15px 25px;
   background-color: #F2F2F2;
 }
 .resultat__global {
