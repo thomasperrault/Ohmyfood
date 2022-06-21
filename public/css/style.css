@@ -80,9 +80,9 @@ body {
   animation: disparition 10ms;
   animation-delay: 4s;
   animation-fill-mode: forwards;
+  scale: 2;
 }
 .loader i {
-  scale: 3;
   animation: spin 2s infinite;
   color: #9356DC;
 }
@@ -573,12 +573,8 @@ input:checked + label .checkbox--rotat {
   display: flex;
   object-fit: cover;
   height: 210px;
+  min-height: 210px;
   border-radius: 20px 20px 0px 0px;
-}
-@media screen and (min-width: 480px) and (max-width: 769px) {
-  .resultat__image {
-    object-fit: fill;
-  }
 }
 .resultat__texte {
   display: flex;

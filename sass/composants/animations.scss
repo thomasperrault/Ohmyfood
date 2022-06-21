@@ -21,8 +21,8 @@
     animation: disparition 10ms;
     animation-delay: 4s; 
     animation-fill-mode: forwards;
+    scale: (2);
     i {
-        scale: 3;
         animation: spin 2s infinite ;
         color: $couleur-primaire;
     }
