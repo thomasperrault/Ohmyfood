@@ -14,6 +14,7 @@
     display: grid;
     place-items: center;
     position: fixed;
+    font-size: 50px;
     z-index: 1;
     background-color: $couleur-back-claire;
     height: 100vh;
@@ -21,7 +22,6 @@
     animation: disparition 10ms;
     animation-delay: 4s;
     animation-fill-mode: forwards;
-    scale: (2);
     i {
         animation: spin 2s infinite ;
         color: $couleur-primaire;

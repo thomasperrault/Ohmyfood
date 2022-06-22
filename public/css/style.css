@@ -72,6 +72,7 @@ body {
   display: grid;
   place-items: center;
   position: fixed;
+  font-size: 50px;
   z-index: 1;
   background-color: #F2F2F2;
   height: 100vh;
@@ -80,7 +81,6 @@ body {
   animation: disparition 10ms;
   animation-delay: 4s;
   animation-fill-mode: forwards;
-  scale: 2;
 }
 .loader i {
   animation: spin 2s infinite;
