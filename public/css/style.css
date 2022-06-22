@@ -129,7 +129,7 @@ body {
 #resultat__coeur1, #resultat__coeur2, #resultat__coeur3, #resultat__coeur4, #resultat__coeur-restau {
   display: none;
 }
-#resultat__coeur1:hover + label > div, #resultat__coeur2:hover + label > div, #resultat__coeur3:hover + label > div, #resultat__coeur4:hover + label > div, #resultat__coeur-restau:hover + label > div {
+#resultat__coeur1:hover + label, #resultat__coeur2:hover + label, #resultat__coeur3:hover + label, #resultat__coeur4:hover + label, #resultat__coeur-restau:hover + label {
   color: transparent;
   background-image: linear-gradient(to right top, #FF79DA, #9356DC);
   background-clip: text;

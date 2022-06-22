@@ -20,7 +20,7 @@
 /*BOUTON COEUR*/
 #resultat__coeur1, #resultat__coeur2, #resultat__coeur3, #resultat__coeur4, #resultat__coeur-restau {
   display: none;
-  &:hover+ label > div {
+  &:hover+ label {
     color: transparent;
     background-image: linear-gradient(to right top, $couleur-secondaire, $couleur-primaire);
     background-clip: text;
