@@ -578,7 +578,7 @@ input:checked + label .checkbox--rotat {
 .resultat__icone {
   display: flex;
   justify-content: right;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .resultat__nouveau {
   display: flex;
