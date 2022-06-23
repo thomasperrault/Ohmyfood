@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html lang="FR">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8"/> <!-- encodage des caractères -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/> <!-- Viewport - Adaptabilite ecran -->
-		<title>OhMyFood</title>
-		<meta name="descritpion" content="Description du site sur les moteurs"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Viewport - Adaptabilite ecran -->
+        <title>OhMyFood</title>
+        <meta name="ohmyfood" content="Ohmyfood! est une entreprise de commande de repas en ligne."/>
 		<script src="https://kit.fontawesome.com/07d3980626.js" crossorigin="anonymous"></script>
 		<link rel="shortcut icon" href="images/logo/Ohmyfood_Favicon.ico" />
 		<link rel="stylesheet" href="public/css/Normalize.css"/>
 	    <link rel="stylesheet" href="public/css/prefixed/style.css" />
 	</head>
-
 	<!-- Corp du site-->
 	<body>
 		<!-- Header : Logo -->
 		<header>
-			<!-- Meta Charset -->
-			<meta charset="UTF-8">
-			<!-- Viewport - Adaptabilite ecran -->
-			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-			<!-- Nav : En-tête du site-->
 			<div class="header">
                 <a class="header__arrow" href="index.html">
                     <i class="fa-solid fa-arrow-left" ></i>
@@ -38,64 +32,66 @@
                 <!--Section : Menu Texte-->
                 <section class="menu__texte">
                     <div class="menu__nom">
-                        <h1>&#192 la française</h1>
-                        <input type="checkbox" id="resultat__coeur-restau"/>
-                        <label class="btn coeur" for="resultat__coeur-restau"><div class="fa-regular fa-heart"></div></label>
+                        <h1>&#192; la française</h1>
+                        <form class="resultat__icone">
+                            <input type="checkbox" id="resultat__coeur-restau"/>
+                            <label class="btn " for="resultat__coeur-restau"><i class="fa-regular fa-heart"></i></label>
+                        </form>
                     </div>
                     <div class="menu__global">
                         <div class="menu__plat">
-                            <h3 class="menu__ordre">ENTR&#201ES</h3>
+                            <h3 class="menu__ordre">ENTR&#201;ES</h3>
                             <div class="menu__liste">
-                                <div class="menu__choix">
-                                <input type="checkbox"  id="option-1">
-                                <label for="option-1">
-                                    <div class="menu__recette">
-                                        <div class="menu__recette--ellipsis">
-                                            <strong>Tartare de poulpe acidulé</strong><br/>
-                                            Aux zestes d'orange
-                                        </div>   
-                                        <div>
-                                            <strong>25€</strong>
-                                        </div>
-                                        <div class="checkbox">
-                                        <div class="fa-solid fa-circle-check checkbox--rotat"></div>
-                                      </div>
-                                  </div>
-                                </label>
+                                  <div class="menu__choix">
+                                    <input type="checkbox"  id="option-1">
+                                    <label for="option-1">
+                                        <span class="menu__recette">
+                                            <span class="menu__recette--ellipsis">
+                                                <strong>Tartare de poulpe acidulé</strong><br/>
+                                                Aux zestes d'orange
+                                            </span>   
+                                            <span class="menu__prix">
+                                                <br><strong>25€</strong>
+                                            </span>
+                                            <span class="checkbox">
+                                                <i class="fa-solid fa-circle-check checkbox--rotat"></i>
+                                            </span>
+                                        </span>
+                                    </label>
                                 </div>
                                 <div class="menu__choix">
-                                <input type="checkbox"  id="option-2">
-                                <label for="option-2">
-                                    <div class="menu__recette">
-                                        <div class="menu__recette--ellipsis">
-                                            <strong>Velouté de légumes d'antan</strong><br/>
-                                            Carotte, panais, topinambour
-                                        </div>   
-                                        <div>
-                                            <strong>32€</strong>
-                                        </div>
-                                        <div class="checkbox">
-                                            <div class="fa-solid fa-circle-check checkbox--rotat"></div>
-                                        </div>
-                                    </div>
-                                </label>
+                                    <input type="checkbox"  id="option-2">
+                                    <label for="option-2">
+                                        <span class="menu__recette">
+                                            <span class="menu__recette--ellipsis">
+                                                <strong>Velouté de légumes d'antan</strong><br/>
+                                                Carotte, panais, topinambour
+                                            </span>   
+                                            <span class="menu__prix">
+                                                <br><strong>32€</strong>
+                                            </span>
+                                            <span class="checkbox">
+                                                <i class="fa-solid fa-circle-check checkbox--rotat"></i>
+                                            </span>
+                                        </span>
+                                    </label>
                                 </div>
                                 <div class="menu__choix">
-                                <input type="checkbox"  id="option-3">
-                                <label for="option-3">
-                                    <div class="menu__recette">
-                                        <div class="menu__recette--ellipsis">
-                                            <strong>Soupe à l'oignon</strong><br/>
-                                            Revisitée
-                                        </div>   
-                                        <div>
-                                            <strong>20€</strong>
-                                        </div>
-                                        <div class="checkbox">
-                                            <div class="fa-solid fa-circle-check checkbox--rotat"></div>
-                                        </div>
-                                    </div>
-                                </label>
+                                    <input type="checkbox"  id="option-3">
+                                    <label for="option-3">
+                                        <span class="menu__recette">
+                                            <span class="menu__recette--ellipsis">
+                                                <strong>Soupe à l'oignon</strong><br/>
+                                                Revisitée
+                                            </span>   
+                                            <span class="menu__prix">
+                                                <br><strong>20€</strong>
+                                            </span>
+                                            <span class="checkbox">
+                                                <i class="fa-solid fa-circle-check checkbox--rotat"></i>
+                                            </span>
+                                        </span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -105,52 +101,52 @@
                                 <div class="menu__choix">
                                 <input type="checkbox"  id="option-4">
                                 <label for="option-4">
-                                    <div class="menu__recette">
-                                        <div class="menu__recette--ellipsis">
+                                    <span class="menu__recette">
+                                        <span class="menu__recette--ellipsis">
                                             <strong>Coquilles Saint-Jacques</strong><br/>
                                             Accompagnées d'une purée de panais
-                                        </div>   
-                                        <div>
-                                            <strong>40€</strong>
-                                        </div>
-                                        <div class="checkbox">
-                                            <div class="fa-solid fa-circle-check checkbox--rotat"></div>
-                                        </div>
-                                    </div>
+                                        </span>   
+                                        <span class="menu__prix">
+                                            <br><strong>40€</strong>
+                                        </span>
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-circle-check checkbox--rotat"></i>
+                                        </span>
+                                    </span>
                                 </label>
                                 </div>
                                 <div class="menu__choix">
                                 <input type="checkbox"  id="option-5">
                                 <label for="option-5">
-                                    <div class="menu__recette">
-                                        <div class="menu__recette--ellipsis">
+                                    <span class="menu__recette">
+                                        <span class="menu__recette--ellipsis">
                                             <strong>Magret de canard</strong><br/>
                                             Et parmentier de pommes de terre
-                                        </div>   
-                                        <div>
-                                            <strong>35€</strong>
-                                        </div>
-                                        <div class="checkbox">
-                                            <div class="fa-solid fa-circle-check checkbox--rotat"></div>
-                                        </div>
-                                    </div>
+                                        </span>   
+                                        <span class="menu__prix">
+                                            <br><strong>35€</strong>
+                                        </span>
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-circle-check checkbox--rotat"></i>
+                                        </span>
+                                    </span>
                                 </label>
                                 </div>
                                 <div class="menu__choix">
                                 <input type="checkbox"  id="option-6">
                                 <label for="option-6">
-                                    <div class="menu__recette">
-                                        <div class="menu__recette--ellipsis">
+                                    <span class="menu__recette">
+                                        <span class="menu__recette--ellipsis">
                                             <strong>Pigeonneau d’Ille-et-Vilaine</strong><br/>
                                             Sur son lit de gnocchis aux légumes
-                                        </div>   
-                                        <div>
-                                            <strong>44€</strong>
-                                        </div>
-                                        <div class="checkbox">
-                                            <div class="fa-solid fa-circle-check checkbox--rotat"></div>
-                                        </div>
-                                    </div>
+                                        </span>   
+                                        <span class="menu__prix">
+                                            <br><strong>44€</strong>
+                                        </span>
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-circle-check checkbox--rotat"></i>
+                                        </span>
+                                    </span>
                                 </label>
                                 </div>
                             </div>
@@ -161,52 +157,52 @@
                                 <div class="menu__choix">
                                 <input type="checkbox"  id="option-7">
                                 <label for="option-7">
-                                    <div class="menu__recette">
-                                        <div class="menu__recette--ellipsis">
+                                    <span class="menu__recette">
+                                        <span class="menu__recette--ellipsis">
                                             <strong>Pétales de violettes glacés</strong><br/>
                                             Et purée de noisettes
-                                        </div>   
-                                        <div>
-                                            <strong>18€</strong>
-                                        </div>
-                                        <div class="checkbox">
-                                            <div class="fa-solid fa-circle-check checkbox--rotat"></div>
-                                        </div>
-                                    </div>
+                                        </span>   
+                                        <span class="menu__prix">
+                                            <br><strong>18€</strong>
+                                        </span>
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-circle-check checkbox--rotat"></i>
+                                        </span>
+                                    </span>
                                 </label>
                                 </div>
                                 <div class="menu__choix">
                                 <input type="checkbox"  id="option-8">
                                 <label for="option-8">
-                                    <div class="menu__recette">
-                                        <div class="menu__recette--ellipsis">
+                                    <span class="menu__recette">
+                                        <span class="menu__recette--ellipsis">
                                             <strong>Fondant au chocolat</strong><br/>
                                             Revisité
-                                        </div>   
-                                        <div>
-                                            <strong>22€</strong>
-                                        </div>
-                                        <div class="checkbox">
-                                            <div class="fa-solid fa-circle-check checkbox--rotat"></div>
-                                        </div>
-                                    </div>
+                                        </span>   
+                                        <span class="menu__prix">
+                                            <br><strong>22€</strong>
+                                        </span>
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-circle-check checkbox--rotat"></i>
+                                        </span>
+                                    </span>
                                 </label>
                                 </div>
                                 <div class="menu__choix">
                                 <input type="checkbox"  id="option-9">
                                 <label for="option-9">
-                                    <div class="menu__recette">
-                                        <div class="menu__recette--ellipsis">
+                                    <span class="menu__recette">
+                                        <span class="menu__recette--ellipsis">
                                             <strong>Millefeuille croustillant</strong><br/>
                                             Myrtilles et pâte d’amande
-                                        </div>   
-                                        <div>
-                                            <strong>23€</strong>
-                                        </div>
-                                        <div class="checkbox">
-                                            <div class="fa-solid fa-circle-check checkbox--rotat"></div>
-                                        </div>
-                                    </div>
+                                        </span>   
+                                        <span class="menu__prix">
+                                            <br><strong>23€</strong>
+                                        </span>
+                                        <span class="checkbox">
+                                            <i class="fa-solid fa-circle-check checkbox--rotat"></i>
+                                        </span>
+                                    </span>
                                 </label>
                                 </div>
                             </div>
@@ -229,12 +225,10 @@
             <a class="logo">ohmyfood</a>
         </div>
         <ul class="footer__ul">
-            <li class="footer__li" href="#"><i class="fa-solid fa-utensils footer__icone"></i><a>Proposer un restaurant</a></li>
-            <li class="footer__li" href="#"><i class="fa-solid fa-handshake-angle footer__icone"></i><a>Devenir partenaire</a></li>
-            <li class="footer__li" href="#"><a>Mentions légales</a></li>        
-            <li class="footer__li">
-                <a href="mailto:thomas.perrault.pro@gmail.com">Contact</a>
-            </li>
+            <li class="footer__li"><a href="#"><i class="fa-solid fa-utensils footer__icone"></i>Proposer un restaurant</a></li>
+            <li class="footer__li"><a href="#"><i class="fa-solid fa-handshake-angle footer__icone"></i>Devenir partenaire</a></li>
+            <li class="footer__li"><a href="#">Mentions légales</a></li>        
+            <li class="footer__li"><a href="mailto:thomas.perrault.pro@gmail.com">Contact</a></li>
         </ul>
     </footer>
     </body>
