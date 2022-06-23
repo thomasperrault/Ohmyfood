@@ -153,7 +153,7 @@ body {
     font-weight: 100;
   }
   to {
-    scale: 1;
+    transform: scale(1);
   }
 }
 /*BOUTON CHECKBOX CHOIX DES PLATS*/
@@ -431,8 +431,7 @@ input:checked + label .checkbox--rotat {
   text-align: center;
 }
 .localisation__pointeur {
-  scale: 1.1;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 .localisation__explorer {
   display: flex;
