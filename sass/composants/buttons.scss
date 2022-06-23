@@ -17,6 +17,36 @@
   box-shadow: 0px 3px 5px $couleur-shadow-fonce;
 }
 
+/*BOUTON COEUR
+.resultat__coeur1, .resultat__coeur2, .resultat__coeur3, .resultat__coeur4, .resultat__coeur-restau {
+  &:hover {
+    color: transparent;
+    background-image: linear-gradient(to right top, $couleur-secondaire, $couleur-primaire);
+    background-clip: text;
+    animation: heart-apparition 2s;
+  }
+  &::selection {color: red;
+    background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
+    background-clip: text;
+    font-weight: bold;
+  }
+  &:checked:hover {color: transparent;
+    animation: none;
+  }
+}
+@keyframes heart-apparition{ /*Apparition du gradient Hover
+  0%{color: black; font-weight: 100;}
+  to{scale: 1; ;
+  }
+}
+
+
+@keyframes heart-apparition{ /*Apparition du gradient Hover
+  0%{color: black; font-weight: 100;}
+  to{scale: 1; ;
+  }
+}*/
+
 /*BOUTON COEUR*/
 #resultat__coeur1, #resultat__coeur2, #resultat__coeur3, #resultat__coeur4, #resultat__coeur-restau {
   display: none;
@@ -26,12 +56,12 @@
     background-clip: text;
     animation: heart-apparition 2s;
   }
-  &:checked + label > div {color: transparent;
+  &:checked + label > i {color: transparent;
     background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
     background-clip: text;
     font-weight: bold;
   }
-  &:checked:hover + label > div {color: transparent;
+  &:checked:hover + label > i {color: transparent;
     animation: none;
   }
 }

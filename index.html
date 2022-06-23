@@ -2,9 +2,9 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8"/> <!-- encodage des caractères -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/> <!-- Viewport - Adaptabilite ecran -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Viewport - Adaptabilite ecran -->
 		<title>OhMyFood</title>
-		<meta name="descritpion" content="Description du site sur les moteurs"/>
+		<meta name="ohmyfood" content="Ohmyfood! est une entreprise de commande de repas en ligne."/>
 		<script src="https://kit.fontawesome.com/07d3980626.js" crossorigin="anonymous"></script>
 		<link rel="shortcut icon" href="images/logo/Ohmyfood_Favicon.ico" />
 		<link rel="stylesheet" href="public/css/Normalize.css"/>
@@ -14,7 +14,7 @@
 	<body>
 		<div class="loader">
 		    <i class="fa-solid fa-spinner"></i>
-		</div>
+        </div>
 		<!-- Header : Logo -->
 		<header>
 			<!-- Nav : En-tête du site-->
@@ -61,48 +61,68 @@
             <section class="resultat">
                 <h2>Restaurants</h2>
                 <nav class="resultat__global">
-                    <a class="resultat__restaurant" href="ohmyfood_la_palette_du_gout.html">
-                        <img class="resultat__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                    alt="La palette du goût"/>
-                        <div class="resultat__texte">
-                            <p><strong>La palette du goût</strong><br>
-                            Ménilmontant</p>
+                    <div class="resultat__restaurant">
+                        <a class="resultat__lien" href="ohmyfood_la_palette_du_gout.html">
+                            <img class="resultat__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                        alt="La palette du goût"/>
+                            <div class="resultat__texte">
+                                <p><strong>La palette du goût</strong><br>
+                                Ménilmontant</p>
+                            </div>
+                        </a>
+                        <form class="resultat__icone">
                             <input type="checkbox" id="resultat__coeur1"/>
-                            <label class="btn coeur" for="resultat__coeur1"><div class="fa-regular fa-heart"></div></label>
+                            <label class="btn coeur" for="resultat__coeur1"><i class="fa-regular fa-heart"></i></label>
+                        </form>
+                        <div class="resultat__nouveau">
+                            <p class="resultat__nouveau-texte">Nouveau</p>
                         </div>
-                        <p class="resultat__nouveau">Nouveau</p>
-                    </a>
-                    <a class="resultat__restaurant" href="ohmyfood_la_note_enchantee.html">
-                        <img class="resultat__image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                                    alt="La note enchantée"/>
-                        <div class="resultat__texte">
-                            <p><strong>La note enchantée</strong><br>
-                            Charonne</p>
+                    </div>
+                    <div class="resultat__restaurant">
+                        <a class="resultat__lien" href="ohmyfood_la_note_enchantee.html">
+                            <img class="resultat__image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                        alt="La note enchantée"/>
+                            <div class="resultat__texte">
+                                <p><strong>La note enchantée</strong><br>
+                                Charonne</p>
+                            </div>
+                        </a>
+                        <form class="resultat__icone">
                             <input type="checkbox" id="resultat__coeur2"/>
-                            <label class="btn coeur" for="resultat__coeur2"><div class="fa-regular fa-heart"></div></label>
+                            <label class="btn coeur" for="resultat__coeur2"><i class="fa-regular fa-heart"></i></label>
+                        </form>
+                        <div class="resultat__nouveau">
+                            <p class="resultat__nouveau-texte">Nouveau</p>
                         </div>
-                        <p class="resultat__nouveau">Nouveau</p>
-                    </a>
-                    <a class="resultat__restaurant" href="ohmyfood_a_la_francaise.html">
-                        <img class="resultat__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                                    alt="A la française" />
-                        <div class="resultat__texte">
-                            <p><strong>&#192 la française</strong><br>
-                            Cité Rouge</p>
+                    </div>
+                    <div class="resultat__restaurant">
+                        <a class="resultat__lien" href="ohmyfood_a_la_francaise.html">
+                            <img class="resultat__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                        alt="A la française"/>
+                            <div class="resultat__texte">
+                                <p><strong>&#192; la française</strong><br>
+                                Cité Rouge</p>
+                            </div>
+                        </a>
+                        <form class="resultat__icone">
                             <input type="checkbox" id="resultat__coeur3"/>
-                            <label class="btn coeur" for="resultat__coeur3"><div class="fa-regular fa-heart"></div></label>
-                        </div>
-                    </a>
-                    <a class="resultat__restaurant" href="ohmyfood_le_delice_des_sens.html">
-                        <img class="resultat__image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                                    alt="Le délice des sens" />
-                        <div class="resultat__texte">
-                            <p><strong>Le délice des sens</strong><br>
-                            Folie-Méricourt</p>
+                            <label class="btn coeur" for="resultat__coeur3"><i class="fa-regular fa-heart"></i></label>
+                        </form>
+                    </div>
+                    <div class="resultat__restaurant">
+                        <a class="resultat__lien" href="ohmyfood_le_delice_des_sens.html">
+                            <img class="resultat__image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                        alt="Le délice des sens"/>
+                            <div class="resultat__texte">
+                                <p><strong>Le délice des sens</strong><br>
+                                Folie-Méricourt</p>
+                            </div>
+                        </a>
+                        <form class="resultat__icone">
                             <input type="checkbox" id="resultat__coeur4"/>
-                            <label class="btn coeur" for="resultat__coeur4"><div class="fa-regular fa-heart"></div></label>
-                        </div>
-                    </a>
+                            <label class="btn coeur" for="resultat__coeur4"><i class="fa-regular fa-heart"></i></label>
+                        </form>
+                    </div>
                 </nav>
             </section>
         </main>
@@ -112,15 +132,11 @@
                     <a class="logo">ohmyfood</a>
 	            </div>
                 <ul class="footer__ul">
-                    <li class="footer__li" href="#"><i class="fa-solid fa-utensils footer__icone"></i><a>Proposer un restaurant</a></li>
-                    <li class="footer__li" href="#"><i class="fa-solid fa-handshake-angle footer__icone"></i><a>Devenir partenaire</a></li>
-                    <li class="footer__li" href="#"><a>Mentions légales</a></li>        
-                    <li class="footer__li">
-                        <a href="mailto:thomas.perrault.pro@gmail.com">Contact</a>
-                    </li>
+                    <li class="footer__li"><a href="#"><i class="fa-solid fa-utensils footer__icone"></i>Proposer un restaurant</a></li>
+                    <li class="footer__li"><a href="#"><i class="fa-solid fa-handshake-angle footer__icone"></i>Devenir partenaire</a></li>
+                    <li class="footer__li"><a href="#">Mentions légales</a></li>        
+                    <li class="footer__li"><a href="mailto:thomas.perrault.pro@gmail.com">Contact</a></li>
                 </ul>
         </footer>
     </body>
 </html>
-                
- 
