@@ -323,6 +323,11 @@ input:checked + label .checkbox--rotat {
   justify-content: space-between;
   align-items: center;
 }
+.menu__nom > .resultat__icone {
+  display: flex;
+  justify-content: right;
+  margin: 0px 0px 0px 0px;
+}
 .menu__ordre {
   display: flex;
   flex-direction: column;
@@ -578,7 +583,7 @@ input:checked + label .checkbox--rotat {
 .resultat__icone {
   display: flex;
   justify-content: right;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 20px 0px 0px;
 }
 .resultat__nouveau {
   display: flex;
