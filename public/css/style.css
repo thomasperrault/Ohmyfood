@@ -44,7 +44,7 @@ h2 {
 h3 {
   font-family: "roboto";
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 p {
@@ -348,7 +348,6 @@ input:checked + label .checkbox--rotat {
   padding: 12px;
   margin-bottom: 15px;
   font-size: large;
-  font-weight: 200;
   background-color: white;
   box-shadow: 0px 3px 5px #BFBFBF;
   transition: 0.5s;
